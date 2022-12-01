@@ -1,0 +1,78 @@
+/*Estilos*/
+
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+.btn{
+    border: none;
+    background-color: rgb(232, 12, 180);
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 50px;
+}
+
+/*HEADER*/
+
+.header-home {
+    height: 174px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+height: 60px;
+}
+
+.header-nav{
+    width: 40%;
+}
+
+.nav-ul{
+justify-content: space-between;
+list-style-type: none;
+}
+
+.burger{
+    display: none;
+}
+.hero-img {
+    width: 50%;
+}
+
+.hero-text {
+width: 40%;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    line-height: 57px;
+    text-align: right;
+}
+
+.hero-text p {
+    line-height: 25px;
+    text-align: right;
+}
+
+.hero-text p,
+.hero-text h1,
+.hero-text button{
+
+}
+
+@media screen and (max-width;480px){
+    .header-nav, .header-home, .btn {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
